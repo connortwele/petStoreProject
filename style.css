@@ -4,11 +4,11 @@ body{
 
 .container{
     width: 70%;
-    height: 1000px;
+    padding: 20px;
     background-color: #FEF7F3;
 }
 
-.flex-container{
+.flex-container-footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,4 +18,56 @@ body{
 i{
     font-size: 30px;
     padding: 2px;
+}
+
+/* above is the same across all css
+ */
+
+.intro{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 300%;
+    transition: 1.5s;
+
+}
+
+.sub-intro{
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 200%;
+
+}
+
+img{
+    border-radius: 4px;
+}
+
+ .flex-container{
+     display: flex;
+     flex-direction: row;
+     padding: 10px;
+ }
+
+.list-group-item{
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.description{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.listTitle{
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+ul li a:hover {
+    font-weight: 800;
+    text-decoration: none;
+    color:#93C2BC;
+}
+
+img .listProd{
+    max-width: 10px;
+    height: auto;
 }

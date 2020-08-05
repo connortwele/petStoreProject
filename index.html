@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
-<!-- for twitter icon above -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
-<!-- for facebook icon above -->
+<!-- for twitter and facebook icon above -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+    <!-- fonts -->
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
@@ -38,16 +38,41 @@
   <!-- navbar end. -->
 <!-- begin body content -->
 <div class="container">
+  <p class="intro text-center">Meet Featured Pet!</p>
+  <p class="sub-intro text-center">This Months Featured Pet</p>
+  <div class="flex-container">
+    <div>
+      <img class="petPicture"src="./assets/landingPagePet.jpeg" alt="featured pet">
+    </div>
+    <!-- featured pet pic -->
+    <!-- featured pet fav products -->
+    <div>
+      <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item listTitle">Featured Pet Fav Products</li>
+          <li class="list-group-item"><a href="./shop.html"> Toy One <img class="listProd"src="./assets/tennisBall.jpg" width="50" height="50"/></a></li>
+          <li class="list-group-item"><a href="./shop.html"> Toy Two <img class="listProd"src="./assets/bone.jpg" width="50" height="50"/></a></li>
+          <li class="list-group-item"><a href="./shop.html"> Food <img class="listProd"src="./assets/dogFood.jpeg" width="50" height="50"/></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end featured pet fav products -->
+  <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam soluta esse illum, voluptatem doloribus expedita impedit dicta hic eos omnis porro quos quo necessitatibus, aut recusandae dolore, nam saepe quibusdam. Quisquam ab ullam aut incidunt commodi dolorem neque provident cumque ut optio, sapiente atque, quis voluptatum tempora repudiandae exercitationem.</p>
+  <!-- end featured pet description -->
+  <!-- shop pets button -->
+  <a href="./shop.html" id="button"class="btn btn-warning btn-lg btn-block">Shop Pets and Pet Products</a>
+
 
 
 </div>
 <!-- end body content -->
 <!-- footer begin -->
 <footer>
-  <div class="flex-container">
-    <i class="devicon-twitter-plain colored"></i>
+  <div class="flex-container-footer">
+    <a href="#"><i class="devicon-twitter-plain colored"></i></a>
 <!-- twitter icon above -->
-    <i class="devicon-facebook-plain colored icon"></i>
+    <a href="#"><i class="devicon-facebook-plain colored icon"></i></a>
 <!-- for facebook icon above -->
   </div>
 </footer>

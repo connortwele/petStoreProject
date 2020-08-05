@@ -1,0 +1,23 @@
+body{
+    background-color:#93C2BC;
+}
+
+.container{
+    width: 70%;
+    padding: 20px;
+    background-color: #FEF7F3;
+}
+
+.flex-container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+i{
+    font-size: 30px;
+    padding: 2px;
+}
+
+/* above is the same across all css */
