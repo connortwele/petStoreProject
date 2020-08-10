@@ -39,7 +39,12 @@ h4{
     font-weight: bold;
 }
 
-li{
+p{
+    font-family: 'Goudy Bookletter 1911', serif;
+
+}
+
+.container-two li{
     font-family: 'Goudy Bookletter 1911', serif;
 }
 
