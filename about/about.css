@@ -21,3 +21,35 @@ i{
 }
 
 /* above is the same across all css */
+
+.container-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-weight: bold;
+}
+
+li{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.mission{
+    font-family: 'Abril Fatface', cursive;
+}
+
+.missionStatement{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+
+
