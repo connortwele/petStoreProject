@@ -21,3 +21,50 @@ i{
 }
 
 /* above is the same across all css */
+
+img{
+    width: 150px;
+    height: auto;
+}
+
+.container-two{
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 25%;
+    height: auto;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #D9D5D2;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.hoverProduct{
+    display: none;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+span:hover + .hoverProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4%;
+    padding-bottom: 2%;
+}
+
+.hoverProduct:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4%;
+    padding-bottom: 2%;
+}
+
