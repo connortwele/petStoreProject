@@ -23,8 +23,8 @@ i{
 /* above is the same across all css */
 
 img{
-    width: 150px;
-    height: auto;
+    max-width: 150px;
+    max-height: auto;
 }
 
 .container-two{
