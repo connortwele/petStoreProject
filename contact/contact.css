@@ -21,3 +21,19 @@ i{
 }
 
 /* above is the same across all css */
+
+h1{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+h3{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.container-two{
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    justify-content: space-around;
+    padding-top: 10%
+}
