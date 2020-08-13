@@ -72,3 +72,7 @@ span:hover + .hoverProduct{
     padding-bottom: 2%;
 }
 
+input{
+    text-decoration: none;
+}
+
