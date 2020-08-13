@@ -35,22 +35,43 @@
         </div>
       </nav>
 <!-- begin body content -->
+
 <div class="container">
   <div class="container-two" id ="market">
     
     </div>
   </div>
-<form>
-  <input type="radio" name="filter" onClick="lowToHigh();" id="lowHigh"> low to high 
-  <input type="radio" name="filter" onClick="highToLow();" id="highLow"> High to low 
-  <input type="radio" name="filter" onClick= "filterDog();" id="dogFilter">Dogs/Dog Products
-  <input type="radio" name="filter" onClick= "filterCat();" id= "catFilter">Cats/Cat Products
-  <input type="radio" name="filter" onClick= "filterOther();" id= "otherFilter">Other Pets/Products
-  <input type="radio" name="filter" onClick= "filterPets();" id="petsFilter">All Pets
-  <input type="radio" name="filter" onClick ="filterProducts();" id="productFilter">All Products
-</form>
+
+  <div class="filter-container">
+    <h5>Filter By:</h5>
+      <label>
+        <input type="radio" name="filter" onClick="lowToHigh();" id="lowHigh"> Low to High 
+      </label>
+      <label>
+        <input type="radio" name="filter" onClick="highToLow();" id="highLow"> High to Low
+      </label>
+      <label>
+        <input type="radio" name="filter" onClick= "filterDog();" id="dogFilter"> Dogs/Dog Products
+      </label>
+      <label>
+        <input type="radio" name="filter" onClick= "filterCat();" id= "catFilter"> Cats/Cat Products
+      </label>
+      <label>
+        <input type="radio" name="filter" onClick= "filterOther();" id= "otherFilter"> Other Pets/Products
+      </label>
+      <label>
+        <input type="radio" name="filter" onClick= "filterPets();" id="petsFilter"> All Pets
+      </label>
+      <label>
+        <input type="radio" name="filter" onClick ="filterProducts();" id="productFilter"> All Products
+      </label>
+      <label>
+        <input type="radio" name="filter" onClick ="none()"; id="standard"> None
+      </label>
+  </div>
  
-</div>
+  <button onClick="productOne()">productOne</button>
+
 <!-- end body content -->
 <!-- footer begin -->
 <footer>
