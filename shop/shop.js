@@ -399,35 +399,7 @@ function filterProducts(){
     }
     
 
-//featured product one
 
-function productOne(){
-
-    var postHTML = " "
-    
-    let productOne = 'Tennis Ball'
-    let productTwo = 'Bone'
-    let productThree = 'Dog Food'
-
-    let results = shop.filter(function(arg){
-        return arg.title == productOne | productTwo 
-    })
-
-    console.log(results)
-    
-    
-    for (var i=0; i < results.length; i++){
-        var heading = '<div class="product"><span><h5>' + results[i].title + '</h5>'
-        var image = '<img src="' + results[i].image + '"/'
-        var price = '<p> $' + results[i].price + '</p></span>'
-        var description = '<div class="hoverProduct"><p>'+ results[i].description + '</p><button type="button" class="btn btn-warning"> add to cart</button></div></div>'
-        var concatThis = heading + image + price + description
-        postHTML = postHTML + concatThis
-    }
-    
-    document.getElementById('market').innerHTML = postHTML
-
-}
 
     
 
