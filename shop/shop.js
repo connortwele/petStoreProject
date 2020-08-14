@@ -1,6 +1,7 @@
 var shop =[
     {
         title: "Puppy One",
+        id:"puppyOne",
         pet: "Dog",
         category: "Pet",
         image: "./assets/puppyOne.png",
@@ -9,6 +10,7 @@ var shop =[
     },
     {
         title: "Puppy Two",
+        id:"puppyTwo",
         pet: "Dog",
         category: "Pet",
         image: "./assets/puppyTwo.png",
@@ -17,6 +19,7 @@ var shop =[
     },
     {
         title: "Puppy Three",
+        id:"puppyThree",
         pet: "Dog",
         category: "Pet",
         image:"./assets/puppyThree.png",
@@ -25,6 +28,7 @@ var shop =[
     },
     {
         title:"Cat One",
+        id: "catOne",
         pet:"Cat",
         category:"Pet",
         image:"./assets/catOne.jpg",
@@ -33,6 +37,7 @@ var shop =[
     },
     {
         title:"Cat Two",
+        id:"catTwo",
         pet:"Cat",
         category:"Pet",
         image:"./assets/catTwo.jpg",
@@ -41,6 +46,7 @@ var shop =[
     },
     {
         title:"Bird One",
+        id: "birdOne",
         pet:"Other",
         category:"Pet",
         image:"./assets/birdOne.jpg",
@@ -49,6 +55,7 @@ var shop =[
     },
     {
         title:"Bird Two",
+        id: "birdTwo",
         pet:"Other",
         category:"Pet",
         image:"./assets/birdTwo.jpg",
@@ -57,6 +64,7 @@ var shop =[
     },
     {
         title:"Hamster",
+        id: "hamster",
         pet:"Other",
         category:"Pet",
         image:"./assets/hamster.jpeg",
@@ -65,6 +73,7 @@ var shop =[
     },
     {
         title:"Bone",
+        id:"bone",
         pet:"Dog",
         category:"etc",
         image:"./assets/bone.jpg",
@@ -73,6 +82,7 @@ var shop =[
     },
     {
         title:"Cat Feather",
+        id: "catFeather",
         pet:"Cat",
         category:"etc",
         image:"./assets/catFeatherToy.jpg",
@@ -81,6 +91,7 @@ var shop =[
     },
     {
         title:"Dry Cat Food",
+        id:"dryCatFood",
         pet:"Cat",
         category:"etc",
         image:"./assets/catFoodDry.jpg",
@@ -89,6 +100,7 @@ var shop =[
     },
     {
         title:"Wet Cat Food",
+        id: "wetCatFood",
         pet:"Cat",
         category:"etc",
         image:"./assets/catFoodWet.jpg",
@@ -97,6 +109,7 @@ var shop =[
     },
     {
         title:"Kitty Litter",
+        id: "kittyLitter",
         pet:"Cat",
         category:"etc",
         image:"./assets/catLitter.jpeg",
@@ -105,6 +118,7 @@ var shop =[
     },
     {
         title:"Cat Castle",
+        id: "catCastle",
         pet:"Cat",
         category:"etc",
         image:"./assets/catPlayground.jpg",
@@ -113,6 +127,7 @@ var shop =[
     },
     {
         title:"Scratching Post",
+        id: "scratchingPost",
         pet:"Cat",
         category:"etc",
         image:"./assets/catScratcher.jpg",
@@ -121,6 +136,7 @@ var shop =[
     },
     {
         title:"Dog Food",
+        id: "dogFood",
         pet:"Dog",
         category:"etc",
         image:"./assets/dogFood.jpeg",
@@ -129,6 +145,7 @@ var shop =[
     },
     {
         title:"Hamster Bedding",
+        id: "hamsterBedding",
         pet:"Other",
         category:"etc",
         image:"./assets/hamsterBedding.jpg",
@@ -137,6 +154,7 @@ var shop =[
     },
     {
         title:"Hamster Food",
+        id: "hamsterFood",
         pet:"Other",
         category:"etc",
         image:"./assets/hamsterFood.jpg",
@@ -145,6 +163,7 @@ var shop =[
     },
     {
         title:"Exercise Wheel",
+        id: "excerciseWheel",
         pet:"Other",
         category:"etc",
         image:"./assets/hamsterWheel.jpg",
@@ -153,6 +172,7 @@ var shop =[
     },
     {
         title:"Laser Pointer",
+        id: "laserPointer",
         pet:"Cat",
         category:"etc",
         image:"./assets/laserPointer.jpg",
@@ -161,6 +181,7 @@ var shop =[
     },
     {
         title:"Litter Box",
+        id: "litterBox",
         pet:"Cat",
         category:"etc",
         image:"./assets/litterBox.jpeg",
@@ -169,6 +190,7 @@ var shop =[
     },
     {
         title:"Tennis Ball",
+        id: "tennisBall",
         pet:"Dog",
         category:"etc",
         image:"./assets/tennisBall.jpg",
@@ -179,12 +201,17 @@ var shop =[
 
 // default layout below
 
+var emptyCart=[1]
+console.log(emptyCart)
+
 var postHTML = " "
 
 
 
+
+
 for (var i=0; i < shop.length; i++){
-    var heading = '<div class="product"><span><h5>' + shop[i].title + '</h5>'
+    var heading = '<div class="product ' + shop[i].id + '"><span><h5>' + shop[i].title + '</h5>'
     var image = '<img src="' + shop[i].image + '"/'
     var price = '<p> $' + shop[i].price + '</p></span>'
     var description = '<div class="hoverProduct"><p>'+ shop[i].description + '</p><button type="button" class="btn btn-warning"> add to cart</button></div></div>'
@@ -192,25 +219,38 @@ for (var i=0; i < shop.length; i++){
     postHTML = postHTML + concatThis
 }
 
+
+
 document.getElementById('market').innerHTML = postHTML
+
+
 
 // return to default ('none' selection)
 
 function none(){
 var postHTML = " "
 
-
-
 for (var i=0; i < shop.length; i++){
+
     var heading = '<div class="product"><span><h5>' + shop[i].title + '</h5>'
     var image = '<img src="' + shop[i].image + '"/'
     var price = '<p> $' + shop[i].price + '</p></span>'
-    var description = '<div class="hoverProduct"><p>'+ shop[i].description + '</p><button type="button" class="btn btn-warning"> add to cart</button></div></div>'
+    var description = '<div class="hoverProduct"><p>'+ shop[i].description + '</p><button type="button" class="btn btn-warning"  id="'+ [i] +'"> add to cart</button></div></div>'
     var concatThis = heading + image + price + description
     postHTML = postHTML + concatThis
+    
+
 }
 
+
+
+
 document.getElementById('market').innerHTML = postHTML
+
+
+
+
+
 }
 
 // sort low to high below
@@ -270,7 +310,7 @@ function filterDog(){
         return arg.pet == dogs
     })
 
-    console.log(results)
+
     
     
     for (var i=0; i < results.length; i++){
@@ -298,7 +338,7 @@ function filterCat(){
         return arg.pet == cats
     })
 
-    console.log(results)
+
     
     
     for (var i=0; i < results.length; i++){
@@ -326,7 +366,6 @@ function filterOther(){
         return arg.pet == others
     })
 
-    console.log(results)
     
     
     for (var i=0; i < results.length; i++){
@@ -354,7 +393,6 @@ function filterPets(){
         return arg.category == allPets
     })
 
-    console.log(results)
     
     
     for (var i=0; i < results.length; i++){
@@ -382,7 +420,7 @@ function filterProducts(){
         return arg.category == allProducts
     })
 
-    console.log(results)
+    
     
     
     for (var i=0; i < results.length; i++){
@@ -397,6 +435,19 @@ function filterProducts(){
     document.getElementById('market').innerHTML = postHTML
     
     }
+
+//add to cart function
+
+
+
+
+
+
+
+
+
+
+
     
 
 
