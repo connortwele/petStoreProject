@@ -4,6 +4,7 @@ body{
 
 .container{
     width: 70%;
+    height: 90vh;
     padding: 20px;
     background-color: #FEF7F3;
 }
@@ -13,12 +14,9 @@ body{
     flex-direction: row;
     justify-content: center;
     padding: 10px;
+    background-color: #343B3F;
 }
 
-i{
-    font-size: 30px;
-    padding: 2px;
-}
 
 /* above is the same across all css */
 
@@ -35,5 +33,9 @@ h3{
     flex-direction: row;
     height: 40%;
     justify-content: space-around;
-    padding-top: 10%
+    padding-top: 10%;
+}
+
+input{
+    margin-bottom: 2%;
 }
